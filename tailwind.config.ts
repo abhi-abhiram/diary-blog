@@ -7,7 +7,12 @@ export default {
     extend: {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
+        serif: ["var(--font-serif)", ...fontFamily.serif],
       },
+      colors: {
+        'theme-green': "#6EEB83",
+        "text": "#A5A5A5"
+      }
     },
   },
   plugins: [],

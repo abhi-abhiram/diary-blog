@@ -1,24 +1,19 @@
 import "~/styles/globals.css";
 
-import { Inter, DM_Serif_Display, Lexend_Deca } from "next/font/google";
+import { DM_Serif_Display, Lexend_Deca } from "next/font/google";
 import { cookies } from "next/headers";
 
 import { TRPCReactProvider } from "~/trpc/react";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
-
 const dmSerifDisplay = DM_Serif_Display({
   subsets: ["latin", "latin-ext"],
-  variable: "--font-serif-display",
+  variable: "--font-serif",
   weight: ["400"],
 });
 
 const lexendDeca = Lexend_Deca({
   subsets: ["latin", "latin-ext"],
-  variable: "--font-serif-display",
+  variable: "--font-sans",
 });
 
 export const metadata = {
@@ -34,7 +29,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`font-sans ${lexendDeca.variable}`}>
+      <body
+        className={`font-sans ${lexendDeca.variable} ${dmSerifDisplay.variable}`}
+      >
         <TRPCReactProvider cookies={cookies().toString()}>
           {children}
         </TRPCReactProvider>

@@ -13,3 +13,14 @@
     background-color: var(--background);
   }
 }
+
+@layer components {
+  .ui-input {
+    background-color: var(--background);
+    @apply text-text border-theme-green border px-[30px] py-5 text-base font-light leading-normal outline-none;
+  }
+
+  .ui-btn-primary {
+    @apply bg-theme-green inline-flex items-center justify-center py-[18px] text-black;
+  }
+}
