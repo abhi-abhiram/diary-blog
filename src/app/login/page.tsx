@@ -11,15 +11,15 @@ export default function Login() {
           width: "32%",
           height: "100%",
         }}
-        className="hidden sm:flex  items-center justify-center border-r-4 border-theme-green"
+        className="hidden md:flex  items-center justify-center border-r-4 border-theme-green"
       >
         <span className="-rotate-90 text-[64px] font-bold leading-normal text-white">
           Login
         </span>
       </div>
       <div className="flex flex-1 items-center justify-center">
-        <div className="space-y-9 px-8 sm:px-0 w-full sm:w-fit">
-          <div className="sm:text-left text-center">
+        <div className="space-y-9 px-8 md:px-0 w-full md:w-fit">
+          <div className="md:text-left text-center">
             <h1 className=" font-serif text-5xl font-normal leading-normal text-white ">
               Welcome
             </h1>
@@ -29,16 +29,16 @@ export default function Login() {
           </div>
           <div className="flex flex-col items-start gap-[22px]">
             <input
-              className="ui-input w-full sm:w-[600px]"
+              className="ui-input w-full md:w-[600px]"
               placeholder="Enter your email"
             />
             <input
-              className="ui-input w-full sm:w-[600px]"
+              className="ui-input w-full md:w-[600px]"
               placeholder="Enter your password"
               type="password"
             />
-            <div className="flex flex-col sm:flex-row w-full items-start justify-between gap-[51px] sm:gap-0">
-              <button className="ui-btn-primary w-[160px] sm:w-[180px] text-xl font-semibold leading-normal uppercase">
+            <div className="flex flex-col md:flex-row w-full items-start justify-between gap-[51px] md:gap-0">
+              <button className="ui-btn-primary w-[160px] md:w-[180px] text-xl font-semibold leading-normal uppercase">
                 LOGIN
               </button>
 
